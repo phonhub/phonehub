@@ -206,7 +206,7 @@ footer {
     align-items: center;
 }
 .browse:hover {
-    background-color: #051874;
+    background-color: #FF9101;
 }
 
 .popout-image {
@@ -217,3 +217,10 @@ footer {
     transform: scale(1.15); /* Scales up the image to 110% */
 }
 
+.firstpage{
+    text-decoration: none;
+
+}
+.mainlogo{
+    color: white;
+}
