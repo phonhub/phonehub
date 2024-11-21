@@ -100,6 +100,7 @@ footer {
 {
     font-weight: bold; 
     transition: color 0.1s;
+    text-decoration: none;
 }
 .facebook-link 
 {
@@ -134,7 +135,7 @@ footer {
 }
 
 .browse {
-    background-color: black;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
     color: white;
     padding: 15px;
     display: flex;
@@ -145,17 +146,18 @@ footer {
     width: 120px;
     height: 25px;
     margin-left: 650px;
-    
+    transition: transform 0.5s ease;
     justify-content: center;
     align-items: center;
 }
 .browse:hover {
-    background-color: #FF9101;
     color: black;
+    transform: scale(1.1);
 }
 
 .product-box {
-    background-color: white;
+    color: white;
+    background-color: black;
     margin-top: 20px;
     height: 450px;
 }
@@ -182,12 +184,58 @@ h1 {
 }
 
 .contact-box {
-    background-color: white;
+    background-color: black;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     width: 45%;
-    border: 1px solid black;
 }
+
+
+.contact-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
+}
+
+.contact-box::before {
+    content: '';
+    position: absolute;
+    inset: -4px; 
+    background: linear-gradient(45deg, #B66B26, #E11111, #E1B811, #E1B811, #250DED, #ED0D89, #C80DED, #ff0000);
+    background-size: 300%;
+    border-radius: 20px;
+    z-index: -1;
+    animation: glowing 6s linear infinite;
+}
+
+.contact-box::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: black;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .contact-box h2 {
     font-size: 1.2em;
@@ -197,7 +245,7 @@ h1 {
 .contact-box p {
     font-size: 1em;
     line-height: 1.5;
-    color: #333;
+    color: white;
 }
 .firstpage{
     text-decoration: none;
