@@ -5,6 +5,7 @@
 </head>
 <body>
 
+
     <!-- Header Section -->
     <header>        
      <div class="box">
@@ -13,26 +14,31 @@
     <header>
       <div class="title">  <a class="firstpage" href="index.html"><h1 class="mainlogo">Phone</h1><h1 class="hub">hub</h1></a>
        </div>
-        <form class="search-form" action="/search" method="get">
-            <input type="text" name="query" placeholder="  Search..." required>
-            <button type="submit">Search</button>
-        </form>
+        <!-- Search Input -->
+<form class="search-form">
+    <input type="text" id="search-input" placeholder="  Search products..." required>
+    <button type="button">Search</button>
+</form>
+
             <nav>
         <ul>
             <li><a href="index.html" class="button-link">Home</a></li>
             <li><a href="latest.html" class="button-link">Latest</a></li>
             <li><a href="brands.html" class="button-link">Brands</a></li>
             <li><a href="contact.html" class="button-link">Contact Us</a></li>
+            <li><a href="https://mailchi.mp/e764dcc8dcd1/abdullah" class="button-link">Sign Up</a></li>
         </ul>
     </nav>
-
         </header>
 
 
     <!-- Featured Section -->
-    <div class="product-box">
+    <div class="product-box" id="myDiv">
     <section id="featured" class="featured">
         <h2 class="type">Featured Products</h2>
+
+   <script src="script.js" defer></script>
+        
         <div class="product-card">
              <a href="https://www.samsung.com/pk/smartphones/galaxy-s24-ultra/buy/"><img src="S24 Ultra.png" alt="Featured Phone 1" class="popout-image">
                  <a href="https://www.samsung.com/pk/smartphones/galaxy-s24-ultra/buy/">
@@ -69,18 +75,20 @@
 
     <!-- Products Section -->
     <section id="products" class="products">
-        <h2 class="section"> All Products</h2>
             <a href="latest.html" class="browse">Browse</a>
         <!-- Add more products as needed -->
     </section>
 
     <!-- Footer Section -->
     <footer>
+
+       <a href="index dark.html"> <h2 class="theme-button">Dark Theme</h2></a>  
+
         <p>&copy; Phonehub. All Rights Reserved.</p>
         <p>Follow us on: 
             <a href="https://www.facebook.com"class="social-link facebook-link">Facebook</a> | 
             <a href="https://www.instagram.com"class="social-link instagram-link">Instagram</a> |
-            <a href="https://www.twitter.com"class="social-link twitter-link">Twitter</a>  
+            <a href="https://www.twitter.com"class="social-link twitter-link">Twitter</a>
         </p>
     </footer>
 
