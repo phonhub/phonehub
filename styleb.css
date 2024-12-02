@@ -38,6 +38,7 @@ body {
     background-color:#444 ;
     width: 500px;
     color: white;
+    margin-left: 60px;
 }
 
 .search-form button {
@@ -67,8 +68,7 @@ header {
 /* Navigation Bar */
 nav {
     background-color: black;
-    width: 110%;
-    margin-left: -115px;
+    width: 100%;
 }
 
 nav ul {
@@ -127,6 +127,7 @@ footer {
 {
     font-weight: bold; 
     transition: color 0.1s;
+    text-decoration: none;
 }
 .facebook-link 
 {
@@ -141,16 +142,52 @@ footer {
     color: #F91A7B;
 }
 /* Button Link Style */
-.brand-name{
-
-    background-color: royalblue;
-
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    background-color: #FF9101;
+    text-decoration: none;
+    border-radius: 30px;
+    border-color: silver;
+    border-width: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.5s ease;
 }
 
-.brand-name:hover {
-    background-color: #555;
+.button-link:hover {
+    background-color: black;
+    color: white;
+    transform: scale(0.9);
 }
 
+.buy-button {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 30px;
+    border-color: silver;
+    border-width: 2px;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+    padding: 8px;
+    margin-left: 70px;
+    margin-top: -7px; 
+    transition: transform 0.3s ease; 
+
+}
+.buy-button:hover {
+    text-decoration: none;
+    background-color: #051874;
+     transform: scale(1.1);
+}
 .type {
     color: black;
 }
@@ -176,8 +213,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.browse {
+    transition: transform 0.3s ease;
+}
 .browse:hover {
     background-color: #051874;
+     transform: scale(1.15);
 }
 
 .popout-image {
@@ -188,3 +229,10 @@ footer {
     transform: scale(1.15); /* Scales up the image to 110% */
 }
 
+.firstpage{
+    text-decoration: none;
+
+}
+.mainlogo{
+    color: white;
+}
